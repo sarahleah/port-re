@@ -1,0 +1,21 @@
+.name-text {
+    padding: 1rem;
+    border: 3px double black;
+    transition: 1s all;
+    box-shadow: 7px 7px #1565c0;
+    z-index: 2;
+    background-color: #fffaf0;
+}
+
+.name-text h2 {
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .name-text {
+        padding: 0.5rem;
+        width: 90%;
+    }
+}

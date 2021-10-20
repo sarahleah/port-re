@@ -1,0 +1,45 @@
+.contact-wrap {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+}
+
+.contact {
+    padding: 1rem;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+    z-index: 2;
+}
+
+.contact .lower {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    height: 100%;
+}
+
+.contact .ancBtn {
+    letter-spacing: 1.2px;
+    font-style: italic;
+    width: 50%;
+}
+
+.contact .ancBtn:nth-of-type(even) {
+    justify-self: end;
+}
+
+@media only screen and (max-width: 700px) {
+
+    .contact-wrap {
+        align-items: center;
+        grid-template-rows: 1fr 2fr;
+        height: 100vh;
+    }
+
+    .contact .lower {
+        height: unset;
+    }
+}

@@ -1,0 +1,75 @@
+.project-outer {
+    margin: 0.5rem 0;
+    background-color: transparent;
+    width: 30vw;
+    height: 60vh;
+    perspective: 1000px;
+    z-index: 2;
+}
+
+.project-inner {
+    border: 3px double black;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.project-outer:hover .project-inner {
+    transform: rotateY(180deg);
+}
+
+.project-back, .project-front {  
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-color: #fffaf0;
+}
+
+.project-front p {
+    padding: 0.5rem 1rem;
+}
+
+.project-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.project-front img {
+    max-height: 50%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+}
+
+@media only screen and (max-width: 700px) {
+    .project-outer {
+        margin: 1rem;
+        width: 90%;
+        height: unset;
+    }
+
+    .project-back, .project-front {
+        position: static;
+        width: unset;
+        height: unset;
+        -webkit-backface-visibility: unset;
+        backface-visibility: unset;
+        transform: none;
+    }
+
+    .project-inner {
+        height: 100%;
+        background-color: #fffaf0;
+    }
+
+    .project-outer:hover .project-inner {
+        transform: none;
+    }
+}

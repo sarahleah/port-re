@@ -1,0 +1,28 @@
+.projects-wrap {
+    height: 100vh;
+    display: grid;
+}
+
+.projects {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 700px) {
+    .projects {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        width: 100vw;
+    }
+
+    .projects-wrap {
+        height: unset;
+    }
+
+    .projects-wrap .buttons {
+        height: 50vh !important;
+        justify-content: unset;
+    }
+}

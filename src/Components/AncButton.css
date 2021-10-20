@@ -1,0 +1,12 @@
+.ancBtn {
+    border: 3px double black;
+    padding: 1rem 1.5rem;
+    margin: 0.5rem;
+    z-index: 2;
+    background-color: #fffaf0;
+    transition: all .3s;
+}
+
+.ancBtn:hover {
+    background-color: #fcefd6;
+}

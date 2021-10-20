@@ -1,0 +1,76 @@
+/* this is based off of CSS-tricks */
+/* thank u chris coyier */
+.shapes {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+:root {
+    --width: 150px;
+    --x-speed: 30s;
+    --y-speed: 7s;
+    --y2-speed: 7s;
+    --transition-speed: 2.2s;
+}
+
+.square, .circle {
+    width: var(--width);
+    height: var(--width);
+    border: 2px solid black;
+}
+
+.square {
+    background-color: green;
+}
+
+.circle {
+    background-color: #1565c0;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.y {
+    animation: y var(--y-speed) linear infinite alternate;
+}
+
+.y2 {
+    animation: y2 var(--y2-speed) linear infinite alternate;
+}
+
+.x {
+    animation: x var(--x-speed) linear infinite alternate;
+}
+
+.x2 {
+    animation: x2 var(--x-speed) linear infinite alternate;
+}
+
+@keyframes x {
+    100% {
+        transform: translateX(calc(100vw - var(--width)));
+    }
+}
+
+@keyframes x2 {
+    100% {
+      transform: translateX(calc(-100vw + var(--width)));
+    }
+}
+
+@keyframes y {
+    100% {
+        transform: translateY(calc(100vh - var(--width)));
+    }
+}
+
+@keyframes y2 {
+    100% {
+        transform: translateY(calc(100vh - var(--width)));
+    }
+}
+
