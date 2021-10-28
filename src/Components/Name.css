@@ -13,7 +13,7 @@
     font-size: 1rem;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
     .name-text {
         padding: 0.5rem;
         width: 90%;

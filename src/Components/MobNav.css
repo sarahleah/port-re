@@ -1,0 +1,22 @@
+.mob-nav-icon {
+    position: fixed;
+    top: 0.25rem;
+    right: 0.25rem;
+    z-index: 4;
+    background-color: #fffaf0;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.mob-nav img {
+    transition: 1s all ease-in;
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}

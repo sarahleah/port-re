@@ -6,8 +6,8 @@ import Shapes from './Shapes'
 export default function Hero() {
     return (
         <header>
-            <Name />
             <Nav />
+            <Name />
             <Shapes />
         </header>
     )

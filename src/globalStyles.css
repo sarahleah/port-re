@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 body, h1, h2, h3, h4, h5, h6, p {
@@ -21,6 +21,11 @@ a, button {
     font-size: inherit;
     text-decoration: none;
     color: inherit
+}
+
+button {
+    background-color: transparent;
+    border: none;
 }
 
 ul {

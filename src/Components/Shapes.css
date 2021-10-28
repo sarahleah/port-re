@@ -11,12 +11,14 @@
 :root {
     --width: 150px;
     --x-speed: 30s;
+    --x2-speed: 30s;
     --y-speed: 7s;
-    --y2-speed: 7s;
+    --y2-speed: 9s;
     --transition-speed: 2.2s;
 }
 
 .square, .circle {
+    position: absolute;
     width: var(--width);
     height: var(--width);
     border: 2px solid black;
@@ -29,9 +31,16 @@
 .circle {
     background-color: #1565c0;
     border-radius: 50%;
-    position: absolute;
     top: 0;
     right: 0;
+}
+
+.circle:hover, .square:hover {
+    transform: scale(102%);
+}
+
+.circle:active, .square:active {
+    transform: scale(99%);
 }
 
 .y {
@@ -47,7 +56,7 @@
 }
 
 .x2 {
-    animation: x2 var(--x-speed) linear infinite alternate;
+    animation: x2 var(--x2-speed) linear infinite alternate;
 }
 
 @keyframes x {

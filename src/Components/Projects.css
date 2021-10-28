@@ -1,15 +1,17 @@
 .projects-wrap {
-    height: 100vh;
     display: grid;
+    grid-template-columns: auto auto;
 }
 
 .projects {
     padding: 2rem 0;
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
     .projects {
         flex-direction: column;
         align-items: center;
@@ -19,10 +21,5 @@
 
     .projects-wrap {
         height: unset;
-    }
-
-    .projects-wrap .buttons {
-        height: 50vh !important;
-        justify-content: unset;
     }
 }

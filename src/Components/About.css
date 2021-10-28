@@ -16,9 +16,9 @@
 .about .text {
     border: 3px double black;
     box-shadow: 7px 7px #b71c1c;
-    width: 50%;
+    width: 60%;
     padding: 1rem;
-    z-index: 2;
+    z-index: 1;
     background-color: #fffaf0;
 }
 
@@ -31,11 +31,13 @@
     padding: 0 0.5rem 0 1rem;
 }
 
-@media only screen and (max-width: 700px) {
-    .about {
-        display: grid;
-        justify-items: unset;
-    }
+.about .ital {
+    font-style: italic;
+    font-weight: 600;
+    color: #8e0000;
+}
+
+@media only screen and (max-width: 770px) {
 
     .about .text {
         padding: 0.5rem;

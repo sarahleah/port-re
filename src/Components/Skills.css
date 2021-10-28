@@ -1,3 +1,10 @@
+.skills-wrap {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .skills {
     border: 3px double black;
     box-shadow: 7px 7px #f9a825;
@@ -23,7 +30,7 @@
     color: #f9a825;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 770px) {
     .skills {
         padding: 0.5rem;
         width: 90%;

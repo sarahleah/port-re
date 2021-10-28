@@ -1,17 +1,25 @@
 .contact-wrap {
-    height: 100vh;
     display: grid;
-    grid-template-rows: 10fr 1fr;
+    grid-template-columns: 2fr 3fr;
 }
 
 .contact {
     padding: 1rem;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 10fr;
 }
 
 .contact h2 {
     font-size: 3rem;
+}
+
+.contact h2, .contact h3 {
     letter-spacing: 2px;
-    z-index: 2;
+}
+
+.contact h3 {
+    font-size: 2rem;
 }
 
 .contact .lower {
@@ -31,11 +39,22 @@
     justify-self: end;
 }
 
-@media only screen and (max-width: 700px) {
+.contact .upper ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact .upper ul li, .contact .upper h3, .contact .upper h2 {
+    position: relative;
+    z-index: 1;
+    margin: 0.25rem 0;
+}
+
+@media only screen and (max-width: 770px) {
 
     .contact-wrap {
         align-items: center;
-        grid-template-rows: 1fr 2fr;
+        grid-template-columns: 1fr;
         height: 100vh;
     }
 
