@@ -4,7 +4,7 @@ import Nav from './Nav'
 import openNav from '../icons/nav.png'
 import closeNav from '../icons/close.png'
 
-import { useState } from 'react/cjs/react.development'
+import { useState } from 'react'
 
 export default function MobNav() {
 
