@@ -2,7 +2,7 @@
     display: flex;
     height: 100vh;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .skills {
@@ -12,6 +12,7 @@
     padding: 1rem;
     z-index: 2;
     background-color: #fffaf0;
+    margin: 3rem;
 }
 
 .skills-logos {
@@ -34,5 +35,6 @@
     .skills {
         padding: 0.5rem;
         width: 90%;
+        margin: 0;
     }
 }
